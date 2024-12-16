@@ -1,13 +1,12 @@
+
 import java.util.Scanner;
 
-public class QuadraticEquationSolver {
+public class Quadratic {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter coefficient a: ");
+        System.out.print("Enter coefficient a,b and c: ");
         double a = scanner.nextDouble();
-        System.out.print("Enter coefficient b: ");
         double b = scanner.nextDouble();
-        System.out.print("Enter coefficient c: ");
         double c = scanner.nextDouble();
         double discriminant = b * b - 4 * a * c;
         if (discriminant > 0) {
@@ -18,8 +17,9 @@ public class QuadraticEquationSolver {
             double root = -b / (2 * a);
             System.out.println("The root is real and repeated: " + root);
         } else {
-            System.out.println("No real roots exist.");
+            System.out.println("No real roots .");
         }
         scanner.close();
     }
 }
+
